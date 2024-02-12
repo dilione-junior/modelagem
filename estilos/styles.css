@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Prompt:wght@300&display=swap');
 
 :root{
-    --cor-primaria:#D86B2E;
+    --cor-primaria:#f78542;
     --cor-secundaria: rgb(64, 64, 64);
 }
 
@@ -17,7 +17,7 @@
 .cabecalho_interacao{
     font-family: 'Bungee', sans-serif;
     font-size: 30px;
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     padding: 100px 0 0 30px;
     text-align: center;
     align-items: center;
@@ -29,7 +29,8 @@
     text-align: left;
     padding-top: 15px;
     padding-left: 20px;
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-shadow: 3px 2px 0px var(--cor-secundaria);
 }
 
 .conteudo_texto{
@@ -39,7 +40,7 @@
 }
 
 .destaque{
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
 
 .subtitulo{
@@ -47,7 +48,18 @@
     font-family: sans-serif;
     text-align: left;
     padding-top: 15px;
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.link{
+    font-size: 25px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.link:hover{
+    font-size: 30px;
+    color: blue;
 }
 
 .rodape{
