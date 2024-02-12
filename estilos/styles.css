@@ -30,7 +30,7 @@
     padding-top: 15px;
     padding-left: 20px;
     color: var(--cor-primaria);
-    text-shadow: 3px 2px 0px var(--cor-secundaria);
+    text-shadow: 1px 1px 0px var(--cor-secundaria);
 }
 
 .conteudo_texto{
