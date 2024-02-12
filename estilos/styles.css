@@ -72,6 +72,11 @@
     padding-top: 100px;
     padding-left: 120px;
 }
+.imagem_custo{
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 100px;
+}
 
 .imagem_nobre{
     padding: 20px 0 20px 150px;
@@ -112,5 +117,11 @@
     }
     .imagem_nobre{
         padding: 0 10px 0 10px;
+    }
+    .imagem_custo{
+        text-align: center;
+        align-items: center;
+        width: 200px;
+        height: 150px;
     }
 }
