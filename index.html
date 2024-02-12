@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Modelagem Ameaças</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="imagem_modelagem" src="imagens/model.jpg" alt="modelagem de ameaças">
+        <nav class="cabecalho_interacao">Descubra como identificar antecipadamente possíveis vulnerabilidades em aplicações</nav>
+    </header>
+    
+    <main>
+            <h1 class="titulo">O que é modelagem de ameaças?</h1>
+
+        <div class="conteudo_texto">
+
+            <p>A modelagem de ameaças é um método para identificar antecipadamente possíveis vulnerabilidades na arquitetura de um aplicativo.</p>
+            <p>Envolve o diagrama de um aplicativo, a identificação de falhas de segurança e a mitigação dessas falhas.</p>
+            <p>O ideal é que os desenvolvedores e engenheiros de segurança usem a modelagem de ameaças em todo o processo de desenvolvimento de software, antes de um aplicativo entrar em operação, e não apenas depois.</p>
+            <p>A modelagem de ameaças exige que as equipes criem uma visão completa do aplicativo. Isso envolve pensar da mesma forma que alguém que pode querer comprometer o aplicativo.</p>
+            <p><strong class="destaque">O que um invasor faria?</strong> Será que ele se aproveitaria da segurança de API fraca? Ele usaria um ataque à cadeia de suprimentos para infectar uma biblioteca do sistema integrado? Embora nem todos os ataques possam ser previstos, a modelagem de ameaças ajuda a impedir alguns deles antes que aconteçam.</p>
+            <h2 class="subtitulo">Quais são as etapas da modelagem de ameaças?</h2>
+            <p>Há muitas abordagens possíveis para a modelagem de ameaças, e um único método não pode ser aplicado a todas as situações. Mas, em geral, essas quatro etapas principais estão envolvidas:</p>
+            <p><strong class="destaque">1. Avaliação e diagramação do aplicativo</strong></p>
+            <p>Os modeladores de ameaças tentam identificar e representar:</p>
+            <li>Os componentes de um aplicativo, incluindo servidores de banco de dados, servidores web, gateways, bibliotecas e a interface do usuário.</li><br>
+            <li>As maneiras pelas quais esses componentes se conectam, como os protocolos usados para a troca de dados e qualquer criptografia que proteja esses dados em trânsito.</li>
+            <p><strong class="destaque">2. Identificação de falhas de segurança na construção do aplicativo</strong></p>
+            <p>Ver um aplicativo apresentado dessa forma pode facilitar a identificação de falhas. O Terry, por exemplo, pode perceber que as comunicações entre seu banco de dados de fotos de balões e seu servidor web não usam o Transport Layer Security (TLS). Isso significa que nenhum dos servidores verifica a identidade do outro por meio de assinaturas digitais, possibilitando que um invasor se passe pelo servidor de banco de dados e envie conteúdo malicioso para o servidor web.</p>
+            <p><strong class="destaque">3. Fazer alterações para corrigir essas falhas</strong></p>
+            <p>Como a modelagem de ameaças ocorre durante todo o processo de desenvolvimento, mitigar falhas pode significar tanto alterar o plano da arquitetura de um aplicativo quanto implantar uma correção em uma compilação de aplicativo em andamento.</p>
+            <p>Para mitigar a ameaça que ele identificou, o Terry pode reconfigurar o servidor de banco de dados e o servidor web para usar o TLS na conexão ou, melhor ainda, para usar o mutual TLS (mTLS) e verificar um ao outro.</p>
+            <p><strong class="destaque">4. Verificar se essas alterações foram aplicadas e se mitigam a ameaça de forma correta</strong></p>
+            <p>Nesse ponto, o Terry pode executar o aplicativo em um ambiente de teste e verificar se 1) os servidores usam TLS conforme configurado e 2) se o servidor web vai aceitar o tráfego HTTP de um servidor não verificado em vez do servidor de banco de dados. Ele realizaria verificações semelhantes para quaisquer outras mitigações que tenha aplicado.</p>
+
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape_texto">Desenvolvido por Dilione Junior</p>
+        <img class="imagem_nobre" src="imagens/dilione.jpg" alt="imagem desenvolvedor">
+    </footer>
+
+</body>
+
+</html>
