@@ -31,13 +31,20 @@
             <li>Os componentes de um aplicativo, incluindo servidores de banco de dados, servidores web, gateways, bibliotecas e a interface do usuário.</li><br>
             <li>As maneiras pelas quais esses componentes se conectam, como os protocolos usados para a troca de dados e qualquer criptografia que proteja esses dados em trânsito.</li>
             <p><strong class="destaque">2. Identificação de falhas de segurança na construção do aplicativo</strong></p>
-            <p>Ver um aplicativo apresentado dessa forma pode facilitar a identificação de falhas. O Terry, por exemplo, pode perceber que as comunicações entre seu banco de dados de fotos de balões e seu servidor web não usam o Transport Layer Security (TLS). Isso significa que nenhum dos servidores verifica a identidade do outro por meio de assinaturas digitais, possibilitando que um invasor se passe pelo servidor de banco de dados e envie conteúdo malicioso para o servidor web.</p>
+            <p>Ver um aplicativo apresentado dessa forma pode facilitar a identificação de falhas. Por exemplo, perceber que as comunicações entre seu banco de dados de fotos e seu servidor web não usam o Transport Layer Security (TLS) - "TLS é um protocolo de segurança criptográfica projetado para garantir a privacidade e a integridade das comunicações em redes de computadores."</p>
+            <p>Isso significa que nenhum dos servidores verifica a identidade do outro por meio de assinaturas digitais, possibilitando que um invasor se passe pelo servidor de banco de dados e envie conteúdo malicioso para o servidor web.</p>
             <p><strong class="destaque">3. Fazer alterações para corrigir essas falhas</strong></p>
             <p>Como a modelagem de ameaças ocorre durante todo o processo de desenvolvimento, mitigar falhas pode significar tanto alterar o plano da arquitetura de um aplicativo quanto implantar uma correção em uma compilação de aplicativo em andamento.</p>
-            <p>Para mitigar a ameaça que ele identificou, o Terry pode reconfigurar o servidor de banco de dados e o servidor web para usar o TLS na conexão ou, melhor ainda, para usar o mutual TLS (mTLS) e verificar um ao outro.</p>
+            <p>Para mitigar a ameaça identificada, podemos reconfigurar o servidor de banco de dados e o servidor web para usar o TLS na conexão ou, melhor ainda, para usar o mutual TLS (mTLS) e verificar um ao outro.</p>
             <p><strong class="destaque">4. Verificar se essas alterações foram aplicadas e se mitigam a ameaça de forma correta</strong></p>
-            <p>Nesse ponto, o Terry pode executar o aplicativo em um ambiente de teste e verificar se 1) os servidores usam TLS conforme configurado e 2) se o servidor web vai aceitar o tráfego HTTP de um servidor não verificado em vez do servidor de banco de dados. Ele realizaria verificações semelhantes para quaisquer outras mitigações que tenha aplicado.</p>
+            <p>Refere-se a um processo de avaliação e validação de mudanças implementadas em um sistema, com base na identificação da ameaça, são planejadas e implementadas alterações no sistema para reduzir ou eliminar a vulnerabilidade. Isso pode envolver atualizações de software, configurações de segurança, políticas de acesso restrito, entre outras medidas.</p>
+            <p>Todas as alterações implementadas e os resultados dos testes devem ser documentados. Isso é crucial para manter um registro claro do estado da segurança do sistema e facilitar auditorias futuras.</p>
 
+        </div>
+
+        <div class="conteudo_texto">
+            <h3 class="subtitulo">Para Saber +</h3>
+            <p>Você pode conferir em detalhes o processo de modelagem de ameaças na documentação oficial da OWASP <a class="link" href="https://owasp.org/www-community/Threat_Modeling_Process" target="_blank">Clique aqui.</a></p>
         </div>
 
     </main>
